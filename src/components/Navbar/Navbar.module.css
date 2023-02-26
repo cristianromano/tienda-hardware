@@ -1,0 +1,22 @@
+.containerNavbar {
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  color: wheat;
+}
+
+.containerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.carrito {
+  padding: 10px;
+  color: #f3efe0;
+}
