@@ -6,6 +6,7 @@
   background-color: black;
   justify-content: space-between;
   color: wheat;
+  box-sizing: border-box;
 }
 
 .containerList {
