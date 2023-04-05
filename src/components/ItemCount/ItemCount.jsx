@@ -1,4 +1,6 @@
+import { Button } from "@mui/joy";
 import { useState } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const [contador, setContador] = useState(initial);
@@ -16,14 +18,18 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
   };
 
   return (
-    <div>
+    <div sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
       <h2>{contador}</h2>
 
-      <button onClick={sumar}>Sumar</button>
+      <Button onClick={sumar} variant="outlined" style={{ margin: "10px" }}>
+        +
+      </Button>
 
-      <button onClick={restar}>Restar</button>
+      <Button onClick={() => onAdd(contador)}>Agregar al carrito</Button>
 
-      <button onClick={() => onAdd(contador)}>Agregar al carrito</button>
+      <Button onClick={restar} variant="outlined" style={{ margin: "10px" }}>
+        -
+      </Button>
     </div>
   );
 };
