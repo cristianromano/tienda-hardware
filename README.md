@@ -1,70 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tienda de Tarjetas Gráficas
 
-## Available Scripts
+Este es un proyecto de una tienda de tarjetas gráficas desarrollada con React, que permite a los usuarios seleccionar entre las opciones de tarjetas gráficas RTX o RADEON, ver los detalles de los productos, agregarlos al carrito de compras, realizar la compra y recibir un código de seguimiento. El proyecto utiliza Firebase para gestionar los productos y el stock.
 
-In the project directory, you can run:
+## Características principales
 
-### `npm start`
+- Selección de tarjetas gráficas: Los usuarios pueden elegir entre las opciones de tarjetas gráficas RTX o RADEON, y ver los detalles de los productos, como el nombre, la descripción, el precio y la disponibilidad.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Detalles de producto: Los usuarios pueden ver los detalles de los productos seleccionados, incluyendo información adicional como las especificaciones técnicas, la capacidad de memoria, la interfaz, etc.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Carrito de compras: Los usuarios pueden agregar productos al carrito de compras, donde pueden revisar y modificar su selección antes de proceder al pago. El carrito de compras muestra el resumen de los productos seleccionados, el precio total y la opción de realizar la compra.
 
-### `npm test`
+- Proceso de compra: La tienda de tarjetas gráficas ofrece un proceso de compra simple, que permite a los usuarios realizar compras de tarjetas gráficas seleccionadas. Al completar la compra, los usuarios recibirán un código de seguimiento que les permitirá rastrear su pedido.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Gestión de stock: El proyecto utiliza Firebase para gestionar los productos y el stock de tarjetas gráficas. A medida que los usuarios realizan compras, el stock se actualiza automáticamente en tiempo real para asegurar que los productos estén siempre actualizados.
 
-### `npm run build`
+## Tecnologías utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El proyecto de la tienda de tarjetas gráficas utiliza las siguientes tecnologías:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Frontend: React, Redux, React Router, Material-UI, Axios
+- Backend: Firebase (para la gestión de productos y el stock)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Configuración y ejecución del proyecto
 
-### `npm run eject`
+A continuación se describen los pasos para configurar y ejecutar el proyecto localmente:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona el repositorio en tu máquina local utilizando el siguiente comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone <URL_DEL_REPOSITORIO>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navega al directorio del proyecto:
 
-## Learn More
+cd <NOMBRE_DEL_PROYECTO>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Instala las dependencias del proyecto:
 
-### Code Splitting
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+4. Crea un proyecto en Firebase y configura la conexión en tu aplicación React. Puedes seguir la documentación oficial de Firebase para obtener más detalles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Agrega los productos de tarjetas gráficas a tu proyecto de Firebase, incluyendo los detalles como el nombre, la descripción, el precio y el stock.
 
-### Making a Progressive Web App
+6. Ejecuta la aplicación en modo de desarrollo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm start
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+7. Abre tu navegador y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
-### Deployment
+## Contribución
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Si deseas contribuir a este proyecto, puedes seguir los siguientes pasos:
 
-### `npm run build` fails to minify
+1. Haz un fork de este repositorio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Crea una rama con un nombre descriptivo para tu contribución.
+
+3. Realiza tus cambios y mejoras en tu rama.
+
+4. Realiza un pull request a la rama principal del repositorio original.
+
+5. Espera la revisión y aprobación
